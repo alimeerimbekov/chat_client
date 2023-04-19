@@ -1,0 +1,144 @@
+.companion {
+  width: 30%;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 0 0 10px;
+
+    span {
+      cursor: pointer;
+    }
+  }
+
+  &__user {
+    position: relative !important;
+
+    span {
+      position: absolute;
+      top: 0;
+      right: 10px;
+    }
+
+    &-image {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+    }
+
+    &-btns {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    &-btn {
+      padding: 5px 10px;
+      background: blueviolet;
+      border-radius: 10px;
+      &:hover {
+        color: #111111;
+        background: white;
+      }
+    }
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+  }
+
+  &__phone {
+    margin: 10px 10px;
+    background: #11111199;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+  }
+
+  &__members {
+    margin: 10px 10px;
+    background: #11111199;
+    border-radius: 10px;
+
+    &-user {
+      overflow-y: scroll;
+      height: 250px;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    }
+
+
+    &-top {
+      display: flex;
+      column-gap: 20px;
+      align-items: center;
+      padding: 5px 20px;
+    }
+
+  }
+
+  &__group {
+    &-rename {
+      position: relative;
+      span {
+        position: absolute;
+        top: 7px;
+        right: 10px;
+      }
+    }
+
+
+  }
+
+  &__name {
+    background: #11111199;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+  }
+
+
+
+  &__post {
+    margin: 10px 10px;
+    background: #11111199;
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+
+    &-save {
+      background: transparent;
+      padding-left: 25px;
+    }
+
+    &-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 10px;
+      position: relative;
+
+      &-emoji {
+        position: absolute;
+        top: 10px;
+        left: -10px;
+      }
+    }
+  }
+}

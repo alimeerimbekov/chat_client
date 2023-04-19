@@ -1,0 +1,83 @@
+.register {
+  background: #222;
+  height: 100vh;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__form {
+    max-width: 470px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__box {
+    background: rgba(138, 43, 226, 0.12);
+    padding: 20px 60px;
+    border-radius: 20px;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    svg {
+      fill: blueviolet;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom:20px;
+  }
+
+  &__btn {
+    background: blueviolet !important;
+    border: 1px solid #ffffff70 !important;
+    color: #fff;
+    text-transform: uppercase;
+    &:hover {
+      background: #ffffff !important;
+      color: #222222 !important;
+    }
+  }
+
+  &__icon {
+    color: #fff !important;
+    &:hover {
+      fill: #222222 !important;
+    }
+  }
+
+  &__text {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    &-login {
+      color: blueviolet;
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+
+  &__error {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: center;
+    padding: 10px 0 0;
+    &-text {
+      color: red;
+    }
+  }
+
+}

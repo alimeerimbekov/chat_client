@@ -1,0 +1,55 @@
+.groups {
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+
+  &__btn {
+    line-height: 30px;
+    &.active {
+      color: blueviolet;
+      border-bottom: 2px solid blueviolet;
+    }
+  }
+
+  &__content {
+
+  }
+
+  &__box {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  &__center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+
+  }
+
+  &__field {
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    padding: 5px 0 5px 20px;
+    margin-bottom: 10px;
+  }
+
+  &__btns {
+    background: blueviolet;
+    padding: 10px 20px;
+    border-radius: 10px;
+    &:hover {
+      background: white;
+      color: black;
+    }
+  }
+}

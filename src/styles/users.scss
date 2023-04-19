@@ -1,0 +1,16 @@
+.users {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 5px;
+
+  &__card {
+    display: flex;
+    column-gap: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    &:hover {
+      border-radius: 20px;
+      background: #ffffff30;
+    }
+  }
+}
